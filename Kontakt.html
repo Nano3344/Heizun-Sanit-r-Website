@@ -7,15 +7,29 @@
   </head>
   <body>
     <header>
-      <h2 class="Heading">PLUS</h2>
+      <img src="img/Heizung-Logo.png">
       <nav>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">Über Uns</a></li>
         <li><a href="Beratung.html">Beratung</a></li>
-        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a class="highlight" href="Kontakt.html">Kontakt</a></li>
         <li><a href="Standort.html">Standort</a></li>
       </nav>
     </header>
+
+    <div class="Datenschutz-wrapper">
+    <span class="closebtn">&times;</span>
+    <div class="Datenschutz-Info">
+    <p>Unsere Website erhebt keine personenbezogenen Daten,
+        ausser Diese, die für die technische Kommunikation notwendig sind ( IP-Adresse ).
+        Die IP-Adresse wird während der Sitzung an den Webserver der Strato AG übermittelt
+        und nach Abschluss der Session nicht gespeichert. Auf dieses Verfahren haben wir
+        als Webseitenbetreiber keinen Einfluss, da ohne IP-Adresse ein Aufruf einer Website
+        grundsätzlich nicht möglich ist.</p>
+    </div>
+  </div>
+  <div class="black"></div>
+
     <div class="Title-wrapper">
     <div class="Background" style="background-image: url(img/Kontaktpic.jpg)">
     </div>
@@ -23,21 +37,22 @@
       <h1>Kontakt</h1>
     </div>
   </div>
+
   <div class="Kontakt-content">
      <div class="Kontakt-wrapper">
-       <div class="Kontakt-form">
+       <div class="Kontakt-form" method="post" action="php/contactform.php">
           <h2>Kontakt Formular</h2>
           <div class="input-field">
-            <input type="text" placeholder="Name">
+            <input name="name" type="text" placeholder="Name">
           </div>
           <div class="input-field">
-             <input type="text" placeholder="Email">
+             <input name="email" type="text" placeholder="Email">
           </div>
           <div class="input-field">
-             <input type="text" placeholder="Betreff">
+             <input name="betreff" type="text" placeholder="Betreff">
           </div>
           <div class="text-field">
-             <textarea type="text" placeholder="Nachricht"></textarea>
+             <textarea name="nachricht" type="text" placeholder="Nachricht"></textarea>
           </div>
           <div class="button-field">
               <p>senden</p>
@@ -52,16 +67,11 @@
            <p>Telefon: 030-448 58 45</p><br>
            <p>Fax: 030-448 21 95</p><br>
            <p>Notdienst: 0151 228 08 134</p><br>
-           <p>Verantwortlicher für diese Domain: Joachim Lehr</p><br>
+           <p>Verantwortlicher für diese Domain: Maik Radner</p><br>
            <p>Eingetragne beim AG Charlottenburg</p><br>
            <p>HRB 34915</p><br>
            <p>Umsatzsteuerident-Nr: DE137195640</p><br>
-           <p class="Datenschutz">Datenschutzerklärung: Unsere Website erhebt keine personenbezogenen Daten,
-             ausser Diese, die für die technische Kommunikation notwendig sind ( IP-Adresse ).
-             Die IP-Adresse wird während der Sitzung an den Webserver der Strato AG übermittelt
-             und nach Abschluss der Session nicht gespeichert. Auf dieses Verfahren haben wir
-             als Webseitenbetreiber keinen Einfluss, da ohne IP-Adresse ein Aufruf einer Website
-             grundsätzlich nicht möglich ist.</p>
+           <p class="Datenschutz">Datenschutzerklärung</p>
         </div>
      </div>
   </div>
@@ -71,5 +81,6 @@
     <p>13086 Berlin</p>
     <p>Tel: 030-4485845</p>
   </footer>
+  <script src="js/index.js"></script>
   </body>
 </html>
