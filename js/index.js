@@ -18,11 +18,29 @@ function closedata() {
 
 //Navigation
 
-const navburger = document.querySelector('.burger-menu');
-const fullnav = document.querySelector('.full-nav');
+var navburger = document.querySelector('.burger-menu');
+var fullnav = document.querySelector('.full-nav');
+const closebutton2 = document.querySelector('.closeNav');
 
 navburger.addEventListener('click', openNav);
+closebutton2.addEventListener('click', closeNav);
 
 function openNav() {
   fullnav.style.display = 'block';
+  blackscreen.style.display = 'block';
+}
+function closeNav() {
+  fullnav.style.display = 'none';
+  blackscreen.style.display = 'none';
+}
+
+//Standort
+
+const standortbutton = document.querySelector('.standort-button');
+const standortpicture = document.querySelector('.standort-wrapper');
+
+standortbutton.addEventListener('click', openStandort);
+
+function openStandort() {
+  standortpicture.style.display = 'block';
 }

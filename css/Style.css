@@ -38,6 +38,9 @@ header nav li a {
   text-decoration: none;
   padding: 15px;
 }
+
+/* Burgernav */
+
 .burger-menu {
   display: none;
 }
@@ -53,9 +56,10 @@ header nav li a {
 .full-nav {
   display: none;
   position: fixed;
+  background-color: white;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 .full-nav .closeNav {
   position: fixed;
@@ -70,17 +74,19 @@ header nav li a {
 }
 .full-nav .content {
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 4;
 }
 .full-nav .content li {
   list-style: none;
 }
 .full-nav .content li a {
   font-size: 35px;
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -97,6 +103,9 @@ header nav li a {
     display: block;
   }
 }
+
+/* footer */
+
 footer {
   width: 100%;
   display: flex;
@@ -126,6 +135,7 @@ footer p{
     opacity: 1;
   }
 }
+
 /* Home Section */
 
 .Background {
@@ -135,7 +145,7 @@ footer p{
   background-size: cover;
   background-position: center;
   animation: 1s fadeIn ease;
-  z-index: 0;
+  z-index: -1;
 }
 .Home-content {
   width: 100%;
@@ -401,6 +411,27 @@ footer p{
   padding: 20px;
   background-color: white;
 }
+.standort-wrapper {
+  display: none;
+}
+.picture-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.picture-wrapper img {
+  width: 350px;
+}
+.Kontakt-info .standort-button {
+  text-decoration: underline;
+}
+.Kontakt-info .standort-button:hover {
+  cursor: pointer;
+}
 @media (max-width: 800px) {
 .Kontakt-content {
   min-height: 200vh;
@@ -419,6 +450,7 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .Location-wrapper img {
   width: 350px;
