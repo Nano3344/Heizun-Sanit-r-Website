@@ -63,10 +63,10 @@ header nav li a {
 }
 .full-nav .closeNav {
   position: fixed;
-  top: 40px;
-  left: 50px;
+  top: 25px;
+  right: 35px;
   font-weight: bold;
-  color: white;
+  color: black;
   font-size: 50px;
 }
 .full-nav .closeNav:hover {
@@ -86,7 +86,7 @@ header nav li a {
 }
 .full-nav .content li a {
   font-size: 35px;
-  color: black;
+  color: #E53935;
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -120,11 +120,13 @@ footer p{
   font-family: sans-serif;
   font-weight: bold;
   color: white;
+  font-size: 13px;
   z-index: 1;
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   footer p {
-    font-size: 13px;
+    font-size: 10px;
+    padding: 15px;
   }
 }
 @keyframes fadeIn {
@@ -235,6 +237,9 @@ footer p{
   width: 240px;
   font-size: 14px;
   text-align: center;
+}
+.Paragraph-wrapper a {
+  color: black;
 }
 @media (max-width:600px) {
   .Paragraph-wrapper p {
