@@ -18,7 +18,7 @@ header {
   align-items: center;
   background-color: white;
   padding: 30px 100px;
-  z-index: 1;
+  z-index: 3;
 }
 header .Heading {
   font-size: 25px;
@@ -371,12 +371,14 @@ footer p{
 .Kontakt-info h2 {
   margin-bottom: 10px;
 }
+.Kontakt-info a {
+  color: white;
+}
 .Kontakt-info .Datenschutz {
   font-size: 15px;
   text-decoration: underline;
-}
-.Kontakt-info .Datenschutz:hover {
   cursor: pointer;
+  margin-top: -10px;
 }
 .black {
   display: none;
@@ -387,9 +389,6 @@ footer p{
   z-index: 2;
   opacity: 0.7;
 }
-.Datenschutz-wrapper {
-  display: none;
-}
 .Datenschutz-Info {
   width: 100%;
   height: 100%;
@@ -397,24 +396,26 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  flex-direction: column;
+  z-index: 1;
 }
-.Datenschutz-wrapper .closebtn {
-  position: fixed;
-  top: 230px;
-  right: 485px;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  z-index: 4;
-}
-.Datenschutz-wrapper .closebtn:hover {
-  cursor: pointer;
+.Datenschutz-Info h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 .Datenschutz-wrapper .Datenschutz-Info p {
   width: 400px;
   padding: 20px;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Raleway;
+}
+@media (max-width: 600px) {
+  .Datenschutz-wrapper .Datenschutz-Info p {
+    width: 300px;
+  }
 }
 .standort-wrapper {
   display: none;
@@ -433,8 +434,6 @@ footer p{
 }
 .Kontakt-info .standort-button {
   text-decoration: underline;
-}
-.Kontakt-info .standort-button:hover {
   cursor: pointer;
 }
 @media (max-width: 800px) {

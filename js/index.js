@@ -1,4 +1,4 @@
-const datenbutton = document.querySelector('.Datenschutz');
+/*const datenbutton = document.querySelector('.Datenschutz');
 const blackscreen = document.querySelector('.black');
 const daten = document.querySelector('.Datenschutz-wrapper');
 const closebutton = document.querySelector('.closebtn');
@@ -14,7 +14,7 @@ function opendata() {
 function closedata() {
   blackscreen.style.display = 'none';
   daten.style.display = 'none';
-}
+}*/
 
 // Navigation
 
