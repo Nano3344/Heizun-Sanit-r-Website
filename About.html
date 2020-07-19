@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="img/Heizung-icon.png">
     <title></title>
@@ -14,11 +15,12 @@
         <div class="full-nav">
           <span id="closeNav" class="closeNav">&times;</span>
           <div class="content">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">Über Uns</a></li>
-          <li><a href="Beratung.html">Beratung</a></li>
-          <li><a href="Kontakt.html">Kontakt</a></li>
-          <li><a href="Standort.html">Standort</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Beratung.html">Beratung</a></li>
+            <li><a href="About.html">Über Uns</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="https://www.google.de/maps/place/Pistoriusstra%C3%9Fe+118A,+13086+Berlin/@52.5529801,13.4460324,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84de9154ac91d:0x26f00a5a9239d4e5!8m2!3d52.5529769!4d13.4482211">Standort</a></li>
+            <li><a class="nav-call" href="tel: 030-4485845"><img src="img/phone.png" />Anruf</a></li>
         </div>
         </div>
 
@@ -27,9 +29,11 @@
         <header>
           <img src="img/Heizung-Logo.png">
           <nav>
+            <li><a href="tel:030-4485845"><img class="phone" src="img/phone.png" /></a></li>
+            <li><a class="number" href="tel:030-4485845">030-4485845</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a class="highlight" href="About.html">Über Uns</a></li>
             <li><a href="Beratung.html">Beratung</a></li>
+            <li><a class="highlight" href="About.html">Über Uns</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
           </nav>
           <div class="burger-menu">
@@ -41,46 +45,62 @@
 
   <!-- main content -->
 
-    <div class="Background" style="background-image: url(img/Aboutpic.jpg)"></div>
-    <div class="About-content">
-        <div class="Paragraph-1">
-          <div class="Paragraph-wrapper">
-          <h2>Wer sind wir</h2>
-             <p>Wir sind ein seit vielen Jahren zusammen arbeitendes Team mit
-                entsprechendem Fuhrpark und dazugehöriger Ausrüstung.
-                In den Gewerken Heizung und Sanitär lösen ausgebildete Fachkräfte
-                alle auftretenden Probleme vom tropfenden Wasserhahn bis zur Installation
-                 von kompletten Sanitär- und Heizungsanlagen. In der Altbausanierung werden
-                 Steige- und Fallleitungen ebenso erneuert wie alte Heizungssysteme repariert,
-                  Neue installiert und auch gewartet. Zurzeit arbeiten wir mit der Handwerker App <a href="https://www.tooltime.de/?utm_medium=cpc&utm_source=google&utm_campaign=S-DE_[cam_0003]_Brand&campaignid=1810957643&creativeid=389883467753&keyword=tooltime&gclid=CjwKCAjwguzzBRBiEiwAgU0FT7lVjNvpk3X2csQeZJ5ZT8IysYa2d2jLw1C7MTaVE4GEq6mA4jpRZRoCVjAQAvD_BwE">Tooltime</a></p>
-                </div>
-        </div>
-        <div class="Paragraph-2">
-          <div class="Paragraph-wrapper">
-          <h2>Dienstleistungen</h2>
-             <p>
-               Von der einfachen Gasetagenheizung bis zur Wärme-, Gas-
-               oder Flüssiggasheizung bauen wir neue oder modernisieren
-               ihre alte Heizung mit HK-Thermostatventilen oder Messtechnik
-               für die Abrechnung. Außerdem können Sie über uns jederzeit Elektro-,
-               Gas- und sämtliche Sanitärartikel beziehen - auch für die Küchen- und
-               Badausstattung. Haben Sie noch Fragen über unsere Dienstleistungen
-               oder möchten Sie sich ein Angebot erstellen lassen ? Rufen Sie uns
-               doch einfach unter 030-4485845 an, oder kommen Sie in unser Büro in
-               der Pistoriusstrasse 118a in 13086 Berlin.
-             </p>
-        </div>
+    <div class="about-content">
+      <div class="image-content">
+        <div class="black-overlay"></div>
+         <img src="img/team.png"></img>
+         <h2>Wer sind wir?</h2>
+         <p>Wir sind ein seit vielen Jahren
+             zusammen arbeitendes Team welches
+             Probleme beseitigt wie z.B:</p>
       </div>
+     <div class="service-content">
+        <div class="icon-wrapper">
+           <div class="row-1">
+             <div class="items">
+                <img src="img/format-color-fill.png" alt="">
+                <h3>Beziehung von Sanitär-
+                    Artikeln o.ä.</h3>
+             </div>
+             <div class="items">
+                <img src="img/cable-data.png" alt="">
+                <h3>Erneuerung von Steige- und
+                    Fallleitungen</h3>
+             </div>
+             <div class="items">
+               <img src="img/format-paint.png" alt="">
+               <h3>Altbausanierung</h3>
+             </div>
+           </div>
+           <div class="row-2">
+             <div class="items">
+               <img src="img/water-pump.png" alt="">
+               <h3>Reperatur von Wasserhähnen</h3>
+             </div>
+             <div class="items">
+               <img src="img/tools.png" alt="">
+               <h3>Installation von Sanitär-
+                   und Heizanlagen</h3>
+             </div>
+             <div class="items">
+               <img src="img/radiator.png" alt="">
+               <h3>Reperatur und Wartung von
+                   Sanitär- und Heizanlagen</h3>
+             </div>
+           </div>
+        </div>
+     </div>
     </div>
 
-   <!-- footer -->
+    <!-- footer -->
 
-    <footer>
-      <p>Plus-Heizung-Sanitär</p>
-      <p>Pistoriusstr. 118a</p>
-      <p>13086 Berlin</p>
-      <p>Tel: 030-4485845</p>
-    </footer>
+     <footer>
+       <p>Pistoriusstr. 118a</p>
+       <p>13086 Berlin</p>
+       <p>Tel: 030-4485845</p>
+       <a href="Impressum.html">Impressum</a>
+       <a href="Datenschutz.html">Datenschutz</a>
+     </footer>
     <script src="js/index.js"></script>
   </body>
 </html>

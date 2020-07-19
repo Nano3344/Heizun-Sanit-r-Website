@@ -1,20 +1,30 @@
-/*const datenbutton = document.querySelector('.Datenschutz');
-const blackscreen = document.querySelector('.black');
-const daten = document.querySelector('.Datenschutz-wrapper');
-const closebutton = document.querySelector('.closebtn');
+// Ajax contact form
 
-datenbutton.addEventListener('click', opendata);
-closebutton.addEventListener('click', closedata);
-
-function opendata() {
-  blackscreen.style.display = 'block';
-  daten.style.display = 'block';
+function _ (id) {
+  return document.getElementById(id);
 }
 
-function closedata() {
-  blackscreen.style.display = 'none';
-  daten.style.display = 'none';
-}*/
+function submitForm(){
+	_("submit").disabled = true;
+	var formdata = new FormData();
+	formdata.append( "name", _("name").value );
+	formdata.append( "email", _("email").value );
+  formdata.append( "subject2", _("subject2").value );
+	formdata.append( "message", _("message").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "contactform.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				//_("form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("submit").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}
 
 // Navigation
 
@@ -27,21 +37,29 @@ closebutton2.addEventListener('click', closeNav);
 
 function openNav() {
   fullnav.style.display = 'block';
+  navburger.style.display = 'none';
 }
 function closeNav() {
   fullnav.style.display = 'none';
+  navburger.style.display = 'block';
 }
 
-//Standort
+// Beratung-Smooth-scroll
 
-const standortbutton = document.querySelector('.standort-button');
-const standortpicture = document.querySelector('.standort-wrapper');
+$(function() {
+  $('a[href^="#"]').stop().click(function() {
+     if(location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+       var UD_HASH = this.hash;
+       var UD_ZIEL = $(this.hash);
+       if(UD_ZIEL.length) {
+         var UD_ABSTAND_TOP = UD_ZIEL.offset().top;
 
-standortbutton.addEventListener('click', openStandort);
+         $('html, body').animate({scrollTop: UD_ABSTAND_TOP},600,function(){
+            window.location.hash = UD_HASH;
+         });
+         return false;
+       }
 
-function openStandort() {
-  standortpicture.style.display = 'block';
-}
-function closeStandort() {
-  standortpicture.style.display = 'none';
-}
+     }
+  });
+});
